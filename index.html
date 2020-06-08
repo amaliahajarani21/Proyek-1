@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PLO News</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script type="text/javascript" src="assets/JSON/result.json"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>PLO Ciwaruga</strong> News</a>
+									<ul class="icons">
+										<li><a href="index.html" class="icon brands"><i class="fa fa-home ikon"><span class="Hover-Text">Home</span></i></a></li>
+										<li><a href="#kontak" class="icon brands"><i class="fa fa-child ikon"><span class="Hover-Text">Contact Us</span></i><span class="label">Contact Us</span></a></li>
+										<li><a href="aboutus.html" class="icon brands"><i class="fa fa-group ikon"><span class="Hover-Text">About Us</span></i><span class="label">About Us</span></a></li>
+										<li><a href="error_page.html" class="icon brands"><i class="fa fa-television ikon"><span class="Hover-Text">Our Services</span></i><span class="label">Our Services</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Awali Hari dengan Berita</h1>
+											<p>Membaca Bersama Kami</p>
+										</header>
+										<p>Kami ada untuk membantu memperlihatkan berapa banyak berita dengan judul menjebak sehingga anda dapat mengidentifikasi judul berita seperti apa yang sesuai.</p>
+										<ul class="actions">
+											<li><a href="#mulai" class="button big">Mulai</a></li>
+										</ul>
+									</div>
+									<span class="image object gambar">
+											<img src="images/fp.png" alt="" />
+											<div class="overlay">	
+											</div>										
+									</span>
+								</section>
+																							
+							<!-- Section -->
+								<section id="mulai">
+									<header class="major">
+										<h2>Berita Masuk: </h2>
+									</header> 
+									<div class="posts">
+										<article>
+											<div class="chart">
+												<canvas id="myChart"></canvas>
+											</div>												
+										</article>
+
+										<article>
+											<div class="chart2">
+												<canvas id="myChart2"></canvas>
+											</div>								
+										</article>
+									</div>
+								</section>
+
+								<section>					
+									<div class="posts" style="padding-top: 20px;">										
+										<article>
+											<a href="#" class="image">
+												<span class="gambar">
+													<img src="images/unclickbait.jpg" alt="" />
+													<div class="overlay">	
+													</div>
+												</span>
+											</a>
+											<h3>Berita Non-Clickbait</h3>
+											<p>Kumpulan berita dan isinya dengan judul yang tidak menjerumuskan</p>
+											<ul class="actions">
+												<li><a href="error_page.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image">
+												<span class="gambar">
+													<img src="images/unmisleading.jpg" alt="" />
+													<div class="overlay">	
+													</div>
+												</span>
+											</a>
+											<h3>Berita Tidak Menyesatkan</h3>
+											<p>Kumpula berita dan isinya dengan isi yang sesuai dengan judul</p>
+											<ul class="actions">
+												<li><a href="error_page.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image">
+												<span class="gambar">
+													<img src="images/clickbait.png" alt="" />
+													<div class="overlay">	
+													</div>
+												</span>
+											</a>
+											<h3>Berita Clickbait</h3>
+											<p>Kumpulan berita dan isinya dengan judul yang menjerumuskan</p>
+											<ul class="actions">
+												<li><a href="error_page.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image">
+												<span class="gambar">
+													<img src="images/misleading.jpg" alt="" />
+													<div class="overlay">	
+													</div>
+												</span>
+											</a>
+											<h3>Berita Menyesatkan</h3>
+											<p>Kumpulan berita dan isinya dengan judul dan isi yang tidak saling sesuai</p>
+											<ul class="actions">
+												<li><a href="error_page.html" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="aboutus.html">About Us</a></li>
+										<li><a href="#kontak">Contact</a></li>
+										<li>
+											<span class="opener">Semua Berita</span>
+											<ul>
+												<li><a href="error_page.html">Berita Clickbait</a></li>
+												<li><a href="error_page.html">Berita Non-Clickbait</a></li>
+												<li><a href="error_page.html">Berita Menyimpang</a></li>
+												<li><a href="error_page.html">Berita Tidak Menyimpang</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Sumber Berita</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/detik1.jpg" alt="" /></a>											
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/kompas.jpg" alt="" /></a>											
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/republika.jpg" alt="" /></a>											
+										</article>										
+									</div>								
+								</section>
+
+							<!-- Section -->
+								<section id="kontak">
+									<header class="major">
+										<h2>Hubungi Kami</h2>
+									</header>
+									<p>Semua kritik dan saran untuk kami yang lebh baik dapat langsung anda sampaikan lewat kontak di bawah:</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="error_page.html">plociwaruga@polban.ac.id</a></li>
+										<li class="icon solid fa-phone">+62 1234 5678 901</li>
+										<li class="icon solid fa-home"><a href="https://www.google.com/maps/place/Politeknik+Negeri+Bandung/@-6.8952772,107.56767,13z/data=!4m17!1m11!4m10!1m4!2m2!1d107.6191228!2d-6.9174639!4e1!1m3!2m2!1d107.5743841!2d-6.8718173!3e0!3m4!1s0x2e68e69e1e57e827:0x19bb7ffb22205b80!8m2!3d-6.871842!4d107.574367">Politeknik Negeri Bandung</a></li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/chart.js"></script>
+	</body>
+</html>
