@@ -46,7 +46,11 @@ fetch("result.json")
                     backgroundColor : ['#f99487', '#8b8997']
                     }]
             },
-            options : {},
+            options : {title: {
+                display: true,
+                text: 'Judul Berita',
+                fontSize : 23
+            }},
         });
 
         let myChart2 = document.getElementById('myChart2').getContext('2d');
@@ -64,7 +68,12 @@ fetch("result.json")
                     backgroundColor : ['#f99487', '#8b8997']
 					}]
 			},
-			options : {},
+			options : {
+                title: {
+                    display: true,
+                    text: 'Konten Berita',
+                    fontSize : 23
+            }},
 		});
     });
 
